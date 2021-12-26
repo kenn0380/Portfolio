@@ -46,12 +46,27 @@
 </head>
 <body>
     
-    <nav>
-        <a class="nav-link" id="home-link" href="">Home</a>
-        <div class="right-nav-links">
-            <a href="" class="nav-link"><span class="link-decoration">_</span>My Work</a>
-            <a href="" class="nav-link"><span class="link-decoration">_</span>Contact</a>
-            <a href="" class="nav-link"><span class="link-decoration">_</span>Resume</a>
+    <nav id="desktop-nav">
+        <div class="nav-links">
+            <a class="nav-link" id="home-link" href="index.html">Home</a>
+            <a class="nav-link" id="home-hamburger" href="index.html"><img class="hamburger-home-icon" src="images/bia_case_study/cil_home.svg" alt=""></a>
+            <div class="right-nav-links">
+                <a href="#projects" class="nav-link">My Work</a>
+                <a href="#contact-section" class="nav-link">Contact</a>
+                <a href="images/John Kenney Resume (1).pdf" target="_blank" class="nav-link">Resume</a>
+            </div>
+            <div class="three col">
+                <div class="hamburger" id="hamburger-2">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+              </div>
+        </div>
+        <div class="hamburger-links">
+            <a href="#projects" class="ham-link">My Work</a>
+            <a href="#contact-section" class="ham-link">Contact</a>
+            <a href="images/John Kenney Resume (1).pdf" target="_blank" class="ham-link">Resume</a>
         </div>
     </nav>
 
@@ -59,20 +74,43 @@
 
         <div id="home-hero-container">
 
+       
+        
+            <div id="replacer">
+   
+          
+                <video id="bg-vid-2" autoplay muted src="images/ff-4.mp4"></video>
+              
+            </div>
+ 
             <section id="home-intro">
 
-                <img src="images/sky-background.jpg" alt="" class="hero-img">
+             
 
-                <!-- <div id="home-hero-img">
-                
-                </div> -->
+                    <div id="home-hero-left">
+                    </div>
 
-                <div id="home-hero-text">
-                    <p>Hi there 👋</p>
-                    <p class="home-hero-text-item">My name is John Kenney, but you can call me Jack!</p>
-                    <div class="divider home-hero-text-item"></div>
-                    <p class="home-hero-text-item"><em>UX / UI Designer based in Minneapolis; background in Content Strategy and UX Writing</em></p>
-                </div>
+                    <div id="home-hero-right">
+
+                    <img id="about-me-img" src="images/Ellipse 1.svg" alt="">
+
+                        <div id="home-hero-text">
+                        <!-- <p>Hi there! 👋</p>
+                        <p class="home-hero-text-item">My name is <strong class="strong-text">
+                            John Kenney
+                        </strong>, but you can call me Jack!</p> -->
+                            <div id="name-container">
+                                <h2 id="name">John Kenney</h2>
+                                <div class="home-hero-text-item" id="hero-divider"></div>
+                            </div>
+                            <div id="bio">
+                                <p class="home-hero-text-item"><em>UX / UI Designer based in Minneapolis;<br> background in Content Strategy and UX Writing</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+       
 
             </section>
 
@@ -82,11 +120,267 @@
 
         <!-- My work -->
 
-        <section>
+        <section id="projects" class="project-section">
+
+            <div class="project-container">
+
+                <div class="project-text">
+
+                    <div>
+                        <div class="project-top">
+                            <p class="project-title">Bluebird Boutique</p>
+                            <p>Small Business Website Redesign</p>
+                            <div class="divider home-hero-text-item" id="div0"></div>
+                        </div>
+
+                        <div class="project-tags">
+                            <p>_ 🤩 CMS Web Design</p>
+                            <p>_ 💸 E-commerce</p>
+                            <a href="cs-0.html">&#8594; Read more </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <video class="project-video" id="vid-0" src="images/mockup-bluebird.mp4"></video>
+
+            </div>
+
+            <div class="project-container">
+
+                
+                <video class="project-video" id="vid-1" src="images/bia-project.mp4"></video>
+
+                <div class="project-text">
+
+                    <div>
+                        <div class="project-top">
+                            <p class="project-title">Brain Injury MN</p>
+                            <p>Raising Publicity Through Brand Identity</p>
+                            <div class="divider home-hero-text-item" id="div1"></div>
+                        </div>
+
+                        <div class="project-tags">
+                            <p>_ 😲 RWD</p>
+                            <p>_ 🤓 Information Architecture</p>
+                            <a href="cs-1.html">&#8594; Read more </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-container">
+
+                <div class="project-text">
+
+                    <div>
+                        <div class="project-top">
+                            <p class="project-title">Brain Injury MN</p>
+                            <p>Raising Publicity Through Brand Identity</p>
+                            <div class="divider home-hero-text-item" id="div2"></div>
+                        </div>
+                        <div class="project-tags">
+                            <p>_ 😲 RWD</p>
+                            <p>_ 🤓 Information Architecture</p>
+                            <a href="">&#8594; Read more </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <video class="project-video" id="vid-2" src="images/ed-project.mp4"></video>
+
+            </div>
+
             
+            <div class="project-container">
+
+                
+                <video class="project-video" id="vid-3" src="images/tribi-project.mp4"></video>
+
+                <div class="project-text">
+
+                    <div>
+
+                        <div class="project-top">
+                            <p class="project-title">Brain Injury MN</p>
+                            <p>Raising Publicity Through Brand Identity</p>
+                            <div class="divider home-hero-text-item" id="div3"></div>
+                        </div>
+
+                        <div class="project-tags">
+                            <p>_ 😲 RWD</p>
+                            <p>_ 🤓 Information Architecture</p>
+                            <a href="">&#8594; Read more </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+        </section>
+
+        <!-- My Skills -->
+
+        <section id="my-skills-section">
+
+            <div class="skills-tile">
+
+                <div class="skills-video-container">
+
+                    <video class="skills-vid" autoplay loop src="images/persona-vid.mp4"></video>
+                    <p class="skills-vid-caption">User Persona Creation</p>
+
+                </div>
+
+                <div class="skills-text">
+
+                    <h3 class="skills-title">My Skills</h3>
+
+                    <div class="skills-list">
+
+                        <div class="divider"></div>
+                        <ul class="skills-ul">
+                            <li>
+                                UX Design
+                            </li>
+                            <li>
+                                UI Design
+                            </li>
+                            <li>
+                                HTML/CSS/JS
+                            </li>
+                            <li>
+                                Micro-Interactions
+                            </li>
+                            <li>
+                                User Research
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="skills-tile">
+
+                <div class="skills-video-container">
+                    
+                    <video class="skills-vid" autoplay loop src="images/trello-gif.mp4"></video>
+                    <p class="skills-vid-caption">Agile Sprint Planning with Trello</p>
+
+                </div>
+
+                <div class="skills-text">
+
+                    <h3 class="skills-title">My Process</h3>
+
+                    <div class="skills-list">
+
+                        <div class="divider"></div>
+                        <p class="skills-ul">I take an iterative, double-diamond approach in my design process, with a special eye to root-cause analysis and designing for the user's mental model.</p>
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="skills-tile">
+
+                <div class="skills-video-container">
+
+                    <video class="skills-vid" autoplay loop src="images/ui-video.mp4"></video>
+                    <p class="skills-vid-caption">Interactive Components with Figma</p>
+
+                </div>
+
+                <div class="skills-text">
+
+                    <h3 class="skills-title">Tools</h3>
+
+                    <div class="skills-list">
+
+                        <div class="divider"></div>
+                        <ul class="skills-ul">
+                            <li>
+                                Figma
+                            </li>
+                            <li>
+                                InVision
+                            </li>
+                            <li>
+                                Miro/Figjam
+                            </li>
+                            <li>
+                                Google Analytics
+                            </li>
+                            <li>
+                                Hotjar
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+
+        <section id="contact-section">
+
+            <form action="https://formspree.io/f/xwkagjln" method="POST" id="my-form">
+
+                <p>Contact</p>
+
+                <div class="form-group">
+
+                    <div class="input-container"><input class="input-text" type="text" id="name-input" name="name"  placeholder="Name"></div><br>
+    
+                </div>
+                <div class="form-group">
+    
+                    <div class="input-container"><input class="input-text" type="email" id="email-input" name="email"  placeholder="Email"></div><br>
+    
+                </div>
+                <div class="form-group">
+    
+                    <div><textarea class="input-text" type="text" id="message-input" name="message"  placeholder="Send me a message!"></textarea></div>
+                    
+                </div>
+                <div class="form-group">
+    
+                    <div class="case-study-button-div" id="status">
+                        <button type="submit" class="case-study-button" id="submitButton">Submit &#8594;</button>
+                    </div>
+    
+                </div>
+
+            </form>
+
         </section>
 
     </main>
+
+    <footer>
+
+        <p>©2021 John Kenney</p>
+        <a href="mailto:johnrkenneydesign@gmail.com">johnrkenneydesign@gmail.com</a>
+        <a target="_blank" id="linkedin-anchor" href="https://www.linkedin.com/in/john-kenney-b4bba5173"><img src="images/logos_linkedin.png" alt="linked in"></a>
+
+    </footer>
 
     <div> <!-- JS -->
         <script type="text/javascript" src="js/main.js"></script>
