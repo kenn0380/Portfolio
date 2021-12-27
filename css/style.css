@@ -110,7 +110,7 @@ nav {
     .three {
         display: block !important;
     }
-    #bg-vid {
+    #bg-vid-2 {
         object-fit: cover !important;
         object-position: -236px 60px;
         zoom: 70%;
@@ -403,6 +403,12 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 1500px) {
+    #home-hero-right {
+        padding-top: 172px !important;
+    }
+}
+
 
 
 .hamburger-home-icon {
@@ -488,7 +494,7 @@ main {
  
 }
 
-#bg-vid {
+#bg-vid-2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -552,8 +558,12 @@ main {
     width:100%;
 }
 
+#name-container {
+    display: inline-block;
+}
+
 #bio {
-    display: inline-block !important;
+    display: block !important;
 }
 
 #about-me-img {
@@ -695,7 +705,6 @@ strong {
     justify-content: space-between;
     padding: 72px 144px;
     background-color: #212121;
-    margin-top: 46px;
 }
 
 .skills-tile {
@@ -731,6 +740,8 @@ strong {
     color: white;
     font-weight: 300;
     font-size: 22px;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 .skills-ul {
@@ -991,6 +1002,7 @@ footer p {
 
 .dark-section-container {
     background-color: #212121;
+    max-width: 100% !important;
 }
 
 .embed-section-container {
@@ -1000,7 +1012,7 @@ footer p {
 
 .embed-flex {
     max-width: 1500px;
-    /* display: flex; */
+    max-width: 90vw;
     margin: 0 auto;
 }
 
@@ -1010,6 +1022,7 @@ footer p {
 
 .gray-section-container {
     background-color: #EEEEEE;
+    max-width: 100% !important;
 }
 
 .light-section-container {
@@ -1026,7 +1039,7 @@ footer p {
     padding: 18vh 0;
     margin: 0 auto;
     align-items: flex-end;
-    width: 100%;
+    max-width: 90vw;
 }
 
 .accordion-flex-section {
@@ -1039,6 +1052,8 @@ footer p {
 
 .section-box {
     padding: 9vh 0;
+    max-width: 90vw !important;
+    margin: 0 auto !important
 }
 
 .section-inner-flex {
@@ -1067,7 +1082,7 @@ footer p {
     max-width: 1500px;
     padding: 18vh 0;
     margin: 0 auto;
-    width: 100%;
+    max-width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1075,6 +1090,7 @@ footer p {
 
 .section-flex-small {
     max-width: 1200px !important;
+    max-width: 90vw !important;
 }
 
 .section-flex-left,
@@ -1201,6 +1217,10 @@ footer p {
     font-size: 18px;
 }
 
+.tool-icon {
+    margin-right: 4px;
+}
+
 .inline-icon {
     display: inline-block;
     height: 1.0;
@@ -1251,8 +1271,9 @@ footer p {
     display: block;
     margin: 0 auto;
     background-color: #212121;
-    padding: 18vh;
-    max-width: 1500px;
+    padding: 18vh 0;
+    max-width: 1500px !important;
+    max-width: 100% !important;
 }
 
 .cover-img-full {
@@ -1272,6 +1293,8 @@ footer p {
 
 .embed-title {
     margin-bottom: 2vh;
+    max-width: 90vw !important;
+
 }
 
 .bottom-menu {

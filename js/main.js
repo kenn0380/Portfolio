@@ -81,9 +81,9 @@ $("#home-hero-text").hide()
 $("#about-me-img").hide()
 $("#desktop-nav").hide()
 
-document.getElementById('bg-vid').addEventListener('ended',myHandler,false);
+document.getElementById('bg-vid-2').addEventListener('ended',myHandler,false);
     function myHandler(e) {
-        $('#replacer').html('<video id="bg-vid" autoplay loop muted src="images/bg-viddd.mp4"></video>'); 
+        $('#replacer').html('<video id="bg-vid-2" autoplay loop muted src="images/bg-viddd.mp4"></video>'); 
         $("#home-hero-text").fadeIn(2000);
         $("#about-me-img").fadeIn(2000)
         $("#nav-home").fadeIn(2000)
