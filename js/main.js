@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
     $(".hamburger").click(function(){
       $(this).toggleClass("is-active");
@@ -215,4 +217,14 @@ $(document).ready(function() {
     form.addEventListener("submit", handleSubmit)
 
 
-});
+    var video = document.getElementsByTagName("video");
+    
+            if (video.playing) {
+                // video is already playing so do nothing
+            }
+            else {
+                // video is not playing
+                // so play video now
+                video.play();
+            }
+    });
