@@ -20,7 +20,16 @@ $(document).ready(function(){
     });
 });
 
+var video = document.getElementsByTagName("video");
+    
 
+    document.addEventListener('suspend', () => {
+      video.play();
+    });
+    
+    document.addEventListener('play', () => {
+      // remove play UI
+    });
 
 $(document).ready(function(){
     $("#button1").click(function(){
@@ -217,14 +226,6 @@ $(document).ready(function() {
     form.addEventListener("submit", handleSubmit)
 
 
-    var video = document.getElementsByTagName("video");
     
-            if (video.playing) {
-                // video is already playing so do nothing
-            }
-            else {
-                // video is not playing
-                // so play video now
-                video.play();
-            }
+
     });
