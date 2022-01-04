@@ -209,6 +209,8 @@ nav {
     .cs-hero {
         margin: 0 12px !important;
         flex-direction: column-reverse;
+        height: 70vh !important;
+        justify-content: flex-start;
     }
     .cs-hero-text-top h1 {
         font-size: 24px !important;
@@ -223,9 +225,22 @@ nav {
         width: 100% !important;
         max-width: 100% !important;
     }
+    #cs-2-persona {
+        max-height: unset !important;
+    }
     .cs-hero-container {
-        height: 50vh !important;
+        /* height: 50vh !important; */
         margin-top: 64px;
+        display: block !important;
+        height: 75vh !important;
+    }
+    #cs-2-hero-flex {
+        display: flex;
+        flex-direction: column-reverse !important;
+        margin-bottom: 2vh;
+    }
+    #cs-2-vid {
+        padding-left: 4vw !important;
     }
     .cs-specs {
         margin: 3vh auto !important;
@@ -871,6 +886,10 @@ button:active {
     border-bottom: none;
 }
 
+#successButton {
+    cursor: pointer;
+}
+
 /* Footer */
 
 footer {
@@ -1325,4 +1344,27 @@ footer p {
 #features-bluebird {
     padding: 9vh !important;
     margin: 0 auto !important;
+}
+
+#cs-2-vid {
+    padding-left: 1vw;
+}
+
+#cs-2-hero-flex {
+    width: auto;
+}
+
+.section-flex-one {
+    display: block !important;
+    margin: 0 auto;
+    width: 80vw !important;
+    max-width: 1200px;
+}
+
+#cs-2-persona {
+    max-height: 60vh;
+}
+
+#cs-2-mood-board {
+    margin: 0 auto;
 }

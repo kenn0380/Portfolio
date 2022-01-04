@@ -20,16 +20,17 @@ $(document).ready(function(){
     });
 });
 
-var video = document.getElementsByTagName("video");
-    
 
-    document.addEventListener('suspend', () => {
+
+    document.addEventListener('suspend', video => {
       video.play();
     });
     
-    document.addEventListener('play', () => {
+    document.addEventListener('play', video  => {
       // remove play UI
     });
+
+    var video = document.getElementsByTagName("video");
 
 $(document).ready(function(){
     $("#button1").click(function(){
