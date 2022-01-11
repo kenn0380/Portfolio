@@ -21,16 +21,20 @@ $(document).ready(function(){
 });
 
 
+// autoplayVideos.onsuspend = function() {
+//     console.log("Loading of the media is suspended");
+// };
 
-    document.addEventListener('suspend', video => {
-      video.play();
-    });
+// document.autoplayVideos.suspend();
+
+
+//     document.addEventListener('suspend', autoplayVideos => {
+//         autoplayVideos.play();
+//     });
     
-    document.addEventListener('play', video  => {
-      // remove play UI
-    });
-
-    var video = document.getElementsByTagName("video");
+//     document.addEventListener('play', autoplayVideos  => {
+//       // remove play UI
+//     });
 
 $(document).ready(function(){
     $("#button1").click(function(){
