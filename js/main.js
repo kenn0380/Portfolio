@@ -1,4 +1,13 @@
 
+    $('#comp-video').on('ended', function () {
+        this.load();
+    this.play();
+      });
+$('#comp-video').on('paused', function () {
+    this.load();
+    this.play();
+  });
+
 
 $(document).ready(function(){
     $(".hamburger").click(function(){
@@ -91,21 +100,21 @@ $(document).ready(function(){
     });
 });
 
-$("#down-indicator").hide()
-$("#nav-home").hide()
-$("#home-hero-text").hide()
-$("#about-me-img").hide()
-$("#desktop-nav").hide()
+// $("#down-indicator").hide()
+// $("#nav-home").hide()
+// $("#home-hero-text").hide()
+// $("#about-me-img").hide()
+// $("#desktop-nav").hide()
 
-document.getElementById('bg-vid-2').addEventListener('ended',myHandler,false);
-    function myHandler(e) {
-        $('#replacer').html('<video id="bg-vid-2" playsinline autoplay muted loop src="images/bg-viddd.mp4"></video>'); 
-        $("#home-hero-text").fadeIn(2000);
-        $("#about-me-img").fadeIn(2000)
-        $("#nav-home").fadeIn(2000)
-        $("#down-indicator").fadeIn(2000)
-        $("#desktop-nav").fadeIn(2000)
-    }
+// document.getElementById('bg-vid-2').addEventListener('ended',myHandler,false);
+//     function myHandler(e) {
+//         $('#replacer').html('<video id="bg-vid-2" playsinline autoplay muted loop src="images/bg-viddd.mp4"></video>'); 
+//         $("#home-hero-text").fadeIn(2000);
+//         $("#about-me-img").fadeIn(2000)
+//         $("#nav-home").fadeIn(2000)
+//         $("#down-indicator").fadeIn(2000)
+//         $("#desktop-nav").fadeIn(2000)
+//     }
 
 $(document).ready(function() {
     // Get media - with autoplay disabled (audio or video)
@@ -234,3 +243,7 @@ $(document).ready(function() {
     
 
     });
+
+    $('#vid-1').on('ended', function () {
+        this.pause();
+      });
