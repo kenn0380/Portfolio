@@ -1,12 +1,12 @@
 
-    $('#comp-video').on('ended', function () {
-        this.load();
-    this.play();
-      });
-$('#comp-video').on('paused', function () {
-    this.load();
-    this.play();
-  });
+//     $('#comp-video').on('ended', function () {
+//         this.load();
+//     this.play();
+//       });
+// $('#comp-video').on('paused', function () {
+//     this.load();
+//     this.play();
+//   });
 
 
 $(document).ready(function(){

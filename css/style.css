@@ -89,6 +89,24 @@ nav {
 }
 
 @media screen and (max-width: 425px) {
+    
+    #hero-contents {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding-top: 60px;
+    }
+    #hero-text {
+        padding: 0 !important;
+        margin-top: 22px;
+    }
+    #down-indicator {
+        /* position: relative; */
+        margin-bottom: 100px !important;
+    }
+    #me-hero {
+        max-width: 216px !important;
+    }
     .stat-text {
         font-size: 28px !important;
     }
@@ -134,22 +152,24 @@ nav {
         padding-bottom: 65px !important;
     }
     #home-intro {
-        height: 60vh !important;
+        /* height: 60vh !important; */
+        margin-top: 30px !important;
     }
     #down-indicator {
         position: relative;
-        top: 75px !important;
-        margin-bottom: 24px !important;
+        top: 45px !important;
+        /* margin-bottom: 24px !important; */
     }
     #home-hero-container {
         height: 80vh !important;
+        justify-content: flex-start;
     }
     #projects {
         width: auto !important;
         margin: 0px 12px !important;
     }
     .project-container {
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
         align-items: center !important;
     }
     .project-video {
@@ -157,8 +177,8 @@ nav {
  
     }
     .project-title {
-        font-size: 22px !important;
-        margin-bottom: 4px !important;
+        font-size: 20px !important;
+        margin-bottom: 0px !important;
     }
     .project-text {
         margin-top: 12px !important;
@@ -169,10 +189,17 @@ nav {
     }
     .project-tags p,
     .project-tags a {
-        font-size: 14px !important;
+        font-size: 20px !important;
+    }
+    .project-tags p {
+        display: none;
+    }
+    .project-text div {
+        display: flex;
+        align-items: center;
     }
     .project-container:nth-of-type(2) {
-        flex-direction: column-reverse !important;
+        flex-direction: column !important;
     }
     #my-skills-section {
         flex-direction: column !important;
@@ -180,7 +207,7 @@ nav {
     }
     .skills-tile {
         width: 100% !important;
-        margin-bottom: 24px !important;
+        margin-bottom: 48px !important;
     }
     .skills-tile:last-of-type {
         margin-bottom: 0px !important;
@@ -404,6 +431,9 @@ nav {
     .bottom-menu {
         margin: 4vh 16px !important;
     }
+    .home-quote {
+        display: none !important;
+    }
 }
 
 
@@ -545,6 +575,10 @@ main {
 
     background-size: cover;
     height: 75vh;
+}
+
+.hero-last-line {
+    font-size: 22px !important;
 }
 
 
