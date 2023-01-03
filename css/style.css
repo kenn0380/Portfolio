@@ -171,6 +171,7 @@ nav {
     .project-container {
         flex-direction: column-reverse !important;
         align-items: center !important;
+        max-width: 900px !important;
     }
     .project-video {
         width: 100% !important;
@@ -780,7 +781,7 @@ strong {
 }
 
 #kp-img {
-    width: 50%;
+    width: 50% !important;
     /* object-fit: none !important; */
 }
 
